@@ -1,4 +1,4 @@
-package org.mycode.univ;
+package org.mycode.univ.network.l1;
 
 public abstract class IterationFormula {
     protected AiMas mas;

@@ -1,6 +1,6 @@
-package org.mycode.univ;
+package org.mycode.univ.network.l1;
 
-import org.mycode.univ.formulas.*;
+import org.mycode.univ.network.l1.formulas.*;
 
 import java.util.HashMap;
 import java.util.Map;

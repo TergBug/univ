@@ -1,7 +1,7 @@
-package org.mycode.univ.formulas;
+package org.mycode.univ.network.l1.formulas;
 
-import org.mycode.univ.AiMas;
-import org.mycode.univ.IterationFormula;
+import org.mycode.univ.network.l1.AiMas;
+import org.mycode.univ.network.l1.IterationFormula;
 
 public class V9Formula extends IterationFormula {
     public V9Formula(AiMas mas) {

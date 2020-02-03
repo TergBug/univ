@@ -1,4 +1,4 @@
-package org.mycode.univ;
+package org.mycode.univ.network.l1;
 
 public class App {
     public static void main( String[] args ) {

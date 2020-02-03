@@ -1,4 +1,4 @@
-package org.mycode.univ;
+package org.mycode.univ.network.l1;
 
 public abstract class AiMas<V extends Number> {
     protected V[] mas;
