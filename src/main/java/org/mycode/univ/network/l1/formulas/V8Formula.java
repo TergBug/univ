@@ -9,6 +9,10 @@ public class V8Formula extends IterationFormula {
     }
     @Override
     public double calculate() {
-        return 0;
+        double sum = 0;
+        for (int i = 0; i < 11; i++) {
+            sum += Math.cos(2*mas.getByIndex(i).doubleValue())/(1-Math.sin(2*mas.getByIndex(i).doubleValue()));
+        }
+        return sum;
     }
 }

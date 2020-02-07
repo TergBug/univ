@@ -9,6 +9,15 @@ public class V9Formula extends IterationFormula {
     }
     @Override
     public double calculate() {
-        return 0;
+        double sumInner = 0;
+        for (int i = 0; i < 11; i++) {
+            sumInner += mas.getByIndex(i).doubleValue();
+        }
+        sumInner = sumInner/11;
+        double sumOuter = 0;
+        for (int i = 0; i < 11; i++) {
+            sumOuter += Math.pow(mas.getByIndex(i).doubleValue()-sumInner, 2);
+        }
+        return Math.sqrt(sumOuter/10);
     }
 }

@@ -9,6 +9,10 @@ public class V10Formula extends IterationFormula {
     }
     @Override
     public double calculate() {
-        return 0;
+        double sum = 0;
+        for (int i = 0; i < 11; i++) {
+            sum += 1+Math.sin(mas.getByIndex(i).doubleValue())+Math.sin(mas.getByIndex(i).doubleValue()/2);
+        }
+        return sum;
     }
 }

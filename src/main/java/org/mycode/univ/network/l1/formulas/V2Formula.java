@@ -9,6 +9,14 @@ public class V2Formula extends IterationFormula {
     }
     @Override
     public double calculate() {
-        return 0;
+        double sumNumerator = 0;
+        for (int i = 0; i < 11; i++) {
+            sumNumerator += Math.sin(1-3*Math.pow(Math.sin(mas.getByIndex(i).doubleValue()), 3));
+        }
+        double sumDenominator = 0;
+        for (int i = 0; i < 11; i++) {
+            sumDenominator += Math.pow(Math.cos(Math.pow(mas.getByIndex(i).doubleValue(), 5)), 2);
+        }
+        return sumNumerator/(3*sumDenominator);
     }
 }
